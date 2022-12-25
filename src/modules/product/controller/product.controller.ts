@@ -12,6 +12,7 @@ import {
 
 import { ProductService } from '../service/product.service';
 import { ParseIntPipe } from '../../../common/pipes/parse-int/parse-int.pipe';
+import { CreateProductDto } from '../dto/products.dto';
 
 @Controller('products')
 export class ProductController {
@@ -29,7 +30,7 @@ export class ProductController {
   }
 
   @Post()
-  create(@Body() payload: any) {
+  create(@Body() payload: CreateProductDto) {
     return this.productService.create(payload);
   }
 
