@@ -8,6 +8,9 @@
 2. ```npm install```
 3. Levantar servicios: ```npm run start:dev   ```
 
+### Documentacion Swagger
+<http://localhost:3000/docs>
+
 ---
 
 ##### Made with ❤️ by Leandro Arturi
